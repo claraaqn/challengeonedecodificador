@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <title>Codificador e decodificador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+        integrity="sha384-DfXdz+2vv8w+ZDScGzWY4vi/xZzvw8fK/A/hLr+E8oQnGxgyus6csukGmiqc5r8+" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <main>
+            <header>
+                <img class="logo" src="imagens/Logo.png">    
+            </header>
+            <section>
+                <textarea wrap="soft" id="mensagem" class="input-padrao" placeholder="Digite seu texto" required></textarea>
+                <div class="aviso">
+                    <img src="imagens/exclamação.png"><p class="atn">ATENÇÃO: Só letras minúsculas e sem acento serão convertidas</p>    
+                </div>
+                <div class="btm">
+                    <button class="crip" onclick="btncrip()" id="colorchange">Criptografar</button>
+                    <button class="des" onclick="btndes()" id="colorchange">Descriptografar</button>    
+                </div> 
+            </section>
+            <section>
+                <div class="l">
+                    <textarea wrap="soft" class="txtlt" readonly></textarea>
+                    <button class="copiar" onclick="copiar()">Copiar</button>
+                </div>
+            </section>    
+        </main>
+        <footer>
+            <div class="logos">
+                <p>&copy; Copyright Clara Aquino - 2023</p>
+                <ol class="lista">
+                    <li><a href="https://www.linkedin.com/in/clara-aquinos/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+                    <li><a href="https://github.com/claraaqn" target="_blank"><ion-icon name="logo-github"></ion-icon></li>
+                </ol>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>  
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>  
+</html>
